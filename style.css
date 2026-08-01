@@ -1,7 +1,82 @@
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#1b5e20;
+  color:white;
+  padding:10px;
+}
+
+.logo{
+  height:50px;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  color:white;
+  padding:80px 20px;
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
+  background-size:cover;
+}
+
+/* BUTTONS */
+.buttons a{
+  padding:10px 20px;
+  margin:5px;
+  text-decoration:none;
+  border-radius:5px;
+  color:white;
+}
+
+.call{background:#ff9800;}
+.whatsapp{background:#25D366;}
+
+/* PRODUCTS */
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:40px;
+}
+
+.card{
+  background:white;
+  padding:10px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card img{
+  width:100%;
+  height:150px;
+  object-fit:contain;
+}
+
+/* TRUST */
+.trust{
+  background:#f1f1f1;
+  text-align:center;
+  padding:30px;
+}
+
 /* FORM */
 .form-section{
-  text-align:center;
   padding:40px;
+  text-align:center;
 }
 
 form{
@@ -12,29 +87,21 @@ form{
   gap:10px;
 }
 
-form input, form textarea{
+form input, textarea{
   padding:10px;
-  border-radius:5px;
-  border:1px solid #ccc;
 }
 
-form button{
-  background:#2e7d32;
+button{
+  background:#1b5e20;
   color:white;
   padding:10px;
   border:none;
 }
 
-/* CONTACT */
-.contact{
+/* FOOTER */
+footer{
+  background:#1b5e20;
+  color:white;
   text-align:center;
-  padding:30px;
-  background:#f1f1f1;
-}
-
-/* MAP */
-.map iframe{
-  width:100%;
-  height:300px;
-  border:0;
+  padding:15px;
 }
