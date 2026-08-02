@@ -1,107 +1,159 @@
+/* ===========================
+   SHREE KESHARBHAVANI SEEDTECH
+   Premium Website CSS - Part 1
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-  margin:0;
-  font-family:'Poppins',sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.6;
 }
 
 /* NAVBAR */
+
 .navbar{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  background:#1b5e20;
-  color:white;
-  padding:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:#1b5e20;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
 }
 
-.logo{
-  height:50px;
+.logo img{
+    height:60px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd54f;
 }
 
 /* HERO */
+
 .hero{
-  text-align:center;
-  color:white;
-  padding:80px 20px;
-  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
-  background-size:cover;
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
 }
 
-/* BUTTONS */
+.overlay h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.overlay p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
 .buttons a{
-  padding:10px 20px;
-  margin:5px;
-  text-decoration:none;
-  border-radius:5px;
-  color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:8px;
+    color:#fff;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.call{background:#ff9800;}
-.whatsapp{background:#25D366;}
+.call{
+    background:#ff9800;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.buttons a:hover{
+    transform:translateY(-3px);
+}
+
+/* SECTION TITLE */
+
+.title{
+    text-align:center;
+    font-size:35px;
+    margin:60px 0 30px;
+    color:#1b5e20;
+}
 
 /* PRODUCTS */
-.products{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:20px;
-  padding:40px;
+
+.cards{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding-bottom:60px;
 }
 
+/* CARD */
+
 .card{
-  background:white;
-  padding:10px;
-  border-radius:10px;
-  text-align:center;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
-  transition:0.3s;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.35s;
+    text-align:center;
 }
 
 .card:hover{
-  transform:scale(1.05);
+    transform:translateY(-8px);
 }
 
 .card img{
-  width:100%;
-  height:150px;
-  object-fit:contain;
+    width:100%;
+    height:240px;
+    object-fit:contain;
+    padding:15px;
+    background:#fff;
 }
 
-/* TRUST */
-.trust{
-  background:#f1f1f1;
-  text-align:center;
-  padding:30px;
-}
-
-/* FORM */
-.form-section{
-  padding:40px;
-  text-align:center;
-}
-
-form{
-  max-width:400px;
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-form input, textarea{
-  padding:10px;
-}
-
-button{
-  background:#1b5e20;
-  color:white;
-  padding:10px;
-  border:none;
-}
-
-/* FOOTER */
-footer{
-  background:#1b5e20;
-  color:white;
-  text-align:center;
-  padding:15px;
+.card h3{
+    padding:18px;
+    background:#1b5e20;
+    color:#fff;
+    font-size:20px;
 }
